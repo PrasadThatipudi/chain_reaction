@@ -26,11 +26,11 @@ const createNode = (nodeName, attributes = {}, textContent = "") => {
 };
 
 const startGame = () => {
-  const parent = createNode("div", { className: "parent" });
+  const cell = createNode("div", { className: "cell" });
   const dot = createNode("div", { className: "dot" });
 
-  parent.appendChild(dot);
-  document.body.appendChild(parent);
+  cell.appendChild(dot);
+  document.body.appendChild(cell);
 };
 
 window.onload = startGame;
