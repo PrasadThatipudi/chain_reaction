@@ -25,11 +25,13 @@ const createNode = (nodeName, attributes = {}, textContent = "") => {
   return node;
 };
 
+const createDot = () => createNode("div", { className: "dot" });
+
 const startGame = () => {
   const cell = createNode("div", { className: "cell" });
-  const dot = createNode("div", { className: "dot" });
 
-  cell.appendChild(dot);
+  cell.onclick = () => cell.appendChild(createDot());
+
   document.body.appendChild(cell);
 };
 
