@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dot {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: black;
+}
